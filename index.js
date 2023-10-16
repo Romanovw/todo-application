@@ -32,7 +32,7 @@ tasksData.forEach(function (task) {
 
 checkEmptyList();
 
-form.addEventListener('submit', function(event){
+form.addEventListener('submit', function (event) {
   event.preventDefault();
 });
 
@@ -220,7 +220,7 @@ tasks.addEventListener('dragend', function (e) {
   const draggable = e.target.closest('.draggable');
   if (!draggable) return;
   draggable.classList.remove('dragging');
-  saveTasksOrder(); 
+  saveTasksOrder();
 });
 
 tasks.addEventListener('dragover', function (e) {
